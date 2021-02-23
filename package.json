@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "http://andrei-kuzmin-godel.github.io/portfolio",
   "dependencies": {
     "react": "^17.0.1",
