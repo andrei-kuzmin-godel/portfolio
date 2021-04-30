@@ -1,17 +1,25 @@
-import './App.css';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Home from './components/home';
+import Skills from './components/skills';
+import Experience from './components/experience';
+import Projects from './components/projects';
+import Navigation from './components/navigation';
 
 function App() {
+  const baseUrl = process.env.PUBLIC_URL;
+
   return (
-    <div className="App">
-      <div className="intro text-appear">
-        <p>
-          Andrei Kuzmin
-        </p>
-        <p className="text-glow">
-          COMING SOON
-        </p>
-      </div>
-    </div>
+    <>
+      <Router>
+        <Navigation />
+        <Switch>
+          <Route path={`${baseUrl}`} exact component={Home}/>
+          <Route path={`${baseUrl}/skills`} component={Skills}/>
+          <Route path={`${baseUrl}/experience`} component={Experience}/>
+          <Route path={`${baseUrl}/projects`} component={Projects}/>
+        </Switch>
+      </Router>
+    </>
   );
 }
 
