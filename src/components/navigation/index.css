@@ -109,7 +109,7 @@ nav a:hover {
   }
   
   nav {
-    /* unset mobile css */
+    
     position: relative;
     text-align: left;
     transition: none;
@@ -129,20 +129,21 @@ nav a:hover {
   }
   
   nav li {
-    margin-left: 3em;
+    margin-left: 0;
     margin-bottom: 0;
   }
   
   nav a {
     opacity: 1;
     position: relative;
+    margin-left: 3rem;
   }
   
   nav a::before {
     content: '';
     display: block;
     height: 5px;
-    background: var(--main-background);
+    background: black;
     position: absolute;
     top: -.75em;
     left: 0;

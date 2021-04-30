@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import './index.css';
 
 const Navigation = () => {
@@ -9,10 +11,18 @@ const Navigation = () => {
       <input type="checkbox" id="nav-toggle" class="nav-toggle"></input>
       <nav>
         <ul>
-        <li><a href={`${baseUrl}/`}>Home</a></li>
-        <li><a href={`${baseUrl}/work`}>Work</a></li>
-        <li><a href={`${baseUrl}/about`}>About</a></li>
-        <li><a href={`${baseUrl}/projects`}>Projects</a></li>
+          <Link to={`${baseUrl}`}>
+            <li>Who am I?</li>
+          </Link>
+          <Link to={`${baseUrl}/skills`}>
+            <li>Skills</li>
+          </Link>
+          <Link to={`${baseUrl}/experience`}>
+            <li>Experience</li>
+          </Link>
+          <Link to={`${baseUrl}/projects`}>
+            <li>Projects</li>
+          </Link>
         </ul>
       </nav>
       <label for="nav-toggle" class="nav-toggle-label">

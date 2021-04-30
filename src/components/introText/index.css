@@ -1,0 +1,23 @@
+.intro {
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.text-appear {
+  animation: appear 2000ms ease-in-out 1;
+}
+
+.text-glow {
+  animation: glow 1500ms linear 1 1000ms;
+}
+
+@keyframes glow {
+  40% {
+    text-shadow: 0 0 10px #fff;
+  }
+}
+
+@keyframes appear {
+  from { color: rgba(255, 255, 255, 0); }
+  to { color: rgba(255, 255, 255, 1); }
+}

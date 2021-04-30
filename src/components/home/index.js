@@ -1,13 +1,11 @@
+import IntroText from '../introText';
+
 import './index.css';
 
 const Home = () => {
   return (
     <div className="home">
-      <div className="intro text-appear">
-        <p className="text-glow">
-          Home section
-        </p>
-      </div>
+      <IntroText text={'Home section'}/>
     </div>
   );
 }
