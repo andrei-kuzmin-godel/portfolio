@@ -1,8 +1,12 @@
 import Home from './components/home';
+import Navigation from './components/navigation';
 
 function App() {
   return (
-   <Home />
+    <>
+      <Navigation />
+      <Home />
+    </>
   );
 }
 
